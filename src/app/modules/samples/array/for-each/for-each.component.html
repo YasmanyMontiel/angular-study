@@ -1,19 +1,34 @@
 <div class="container-fluid">
-  <p>
-    El método forEach() ejecuta la función indicada una vez por cada elemento del array. Este método puede ayudarte a
-    recorrer los elementos de un array.
-  </p>
+  <h2 class="title text-center">Diferentes funciones para trabajar con arreglos</h2>
+  <hr>
   <div class="row">
-    <div class="col-6">
+
+    <div class="col-4">
+      <p>
+        El método <b>forEach()</b> ejecuta la función indicada una vez por cada elemento del <b>array</b>. Este método
+        puede ayudarte a
+        recorrer los elementos de un <b>array</b>.
+      </p>
       <button class="btn btn-primary" (click)="onArrayIterator()">
         Recorrer Arreglo lineal
       </button>
     </div>
-    <div class="col-6">
+    <div class="col-4">
+      <p>
+        En javascript puedes usar <b>reverse()</b>. El mismo invierte el orden de los elementos.
+      </p>
+      <br>
       <button class="btn btn-primary" (click)="onArrayReverse()">
         Recorrer Arreglo inverso
       </button>
     </div>
+    <div class="col-4">
+      <p>
+        En javascript puedes usar <b>for()</b>. Y como límite para parar: <b>arreglo.length - 1</b> e ir decrementando el ciclo. El mismo invierte el orden de los elementos.
+      </p>
+      <button class="btn btn-primary" (click)="onArrayReverse1()">
+        Recorrer Arreglo inverso1
+      </button>
+    </div>
   </div>
-
 </div>
