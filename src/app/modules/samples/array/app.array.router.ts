@@ -1,5 +1,6 @@
 import {Routes} from '@angular/router';
 import {ForEachComponent} from './for-each/for-each.component';
+import {MapComponent} from './map/map.component';
 
 
 export const routes: Routes = [
@@ -11,5 +12,9 @@ export const routes: Routes = [
   {
     path: 'forEach',
     component: ForEachComponent
+  },
+  {
+    path: 'map',
+    component: MapComponent
   },
 ];

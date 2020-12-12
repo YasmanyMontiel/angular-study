@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {ForEachComponent} from './for-each/for-each.component';
 import {AppSharedModule} from '../../base/shared/app-shared.module';
 import {routes} from './app.array.router';
+import {MapComponent} from './map/map.component';
 
 
 
@@ -19,7 +20,8 @@ import {routes} from './app.array.router';
     // ----------------
   ],
   declarations: [
-    ForEachComponent
+    ForEachComponent,
+    MapComponent
   ],
   providers: [
   ],
