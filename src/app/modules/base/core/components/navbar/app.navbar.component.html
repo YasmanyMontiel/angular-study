@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" [routerLink]="'/'">Demo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -10,17 +11,19 @@
         <a class="nav-link" [routerLink]="'/'">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" [routerLink]="'/samples/javascript/tips'">Javascript</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
           Arrays
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" [routerLink]="'/samples/array/forEach'">Array - forEach</a>
-          <a class="dropdown-item" [routerLink]="'/samples/array/map'">Array - map</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" [routerLink]="'/samples/array/forEach'">Function - forEach</a>
+          <a class="dropdown-item" [routerLink]="'/samples/array/map'">Function - map</a>
+          <!--          <div class="dropdown-divider"></div>-->
+          <a class="dropdown-item" [routerLink]="'/samples/array/find'">Function - find</a>
+          <a class="dropdown-item" [routerLink]="'/samples/array/slice'">Function - slice</a>
         </div>
       </li>
       <li class="nav-item">

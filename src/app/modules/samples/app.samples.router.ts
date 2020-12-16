@@ -11,4 +11,9 @@ export const routes: Routes = [
     loadChildren: () => import('./array/app.array.module')
       .then((mod) => mod.ArrayModule),
   },
+  {
+    path: 'javascript',
+    loadChildren: () => import('./javascript/app.javascript.module')
+      .then((mod) => mod.JavascriptModule),
+  },
 ];
