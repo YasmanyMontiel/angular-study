@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <h2 class="title text-center">
+    Javascript tips ...
+  </h2>
+  <hr>
+
+  <p>
+    1-Usar el poperador de doble negación <b>!!</b> para convertir cualquier valor a booleano para sin tener que usar
+    ninguna otra función en javascript validar si esta varieble tiene algún valor, ejemplo: <b>!this.isValue =
+    !!value;</b>
+    retorna <b>false</b> si es <b>cero, null, undefined o NaN </b> y <b>true</b> en el resto de lo casos.
+  </p>
+  <p>
+    2-Cómo convertir un string a un número: lo que queremos es transformar el texto a número, para ello retornamos el
+    string con
+    el signo de adicción delante: <b>+numString</b> y retorna el número.
+  </p>
+
+  <form>
+    <div class="form-group">
+      <label>
+        Número de Cuenta:
+      </label>
+      <input type="number" [(ngModel)]="account" name="account" class="form-control" id="account"
+             aria-describedby="account" placeholder="Enter account"/>
+    </div>
+  </form>
+  <button type="text" class="btn btn-primary" (click)="onGetAccount(account)">Send Data</button>
+
+  <p>
+    Podemos hacer un condicional corto cuando verificamos el valor de un método booleano y tenemos que llamar a otro
+    método
+    en caso verdadero en ves de realizar otra condicional se puede hacer todo en una línea: <b>conectado &&
+    this.loaddata();</b>
+  </p>
+  <button type="text" class="btn btn-primary" (click)="shortConditional()">shortConditional</button>
+  <p>
+    Cuando pasamos parámetros a un método y queremos que tenga valores por defecto podemos hacerlo
+    de esta forma: <br> <b>this.nameAnime = nameAnime || 'Myname-default';</b>
+  </p>
+  <button type="text" class="btn btn-primary" (click)="setUserAnime('', '')">setParamsDefault</button>
+  <p>
+    Longitud de un ciclo con caché, para no calcular la longigud del arreglo en cada iteración del mismo:
+  </p>
+  <button type="text" class="btn btn-primary" (click)="readDataNumbers()">readDataNumbers</button>
+<!--  <div *ngFor="let item of dataNumbers; let i = index">-->
+<!--      <span>Posición: {{i}}, valor: {{item}} </span>-->
+<!--  </div>-->
+</div>
+
