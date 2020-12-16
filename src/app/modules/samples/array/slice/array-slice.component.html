@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <h2>slice-array</h2>
+  La función <b>slice()</b> retorna un arreglo cumpliendo con los parámetros pasados por referencia sin modificar
+  el arreglo de elementos original: <br>
+  si como parámetro recibe un número positivo, corta el arreglo a partir del índice que indica ese parámetro, en caso
+  que el parámetro recivido sea negativo, corta el arreglo en las últimas posiciones que indique el parámatro.
+
+  <form>
+    <div class="form-group">
+      <label>
+        Número para slice:
+      </label>
+      <input type="number" [(ngModel)]="numSlice" name="num" class="form-control" id="account"
+             aria-describedby="account" placeholder="Enter num"/>
+    </div>
+  </form>
+  <button type="text" class="btn btn-primary" (click)="showDataNumbers(numSlice)">Send Data</button>
+
+  <p>dataNumbers.slice({{numSlice}})</p>
+  <div *ngFor="let item of dataNumbersBefore">
+    <span>{{item}}</span>
+  </div>
+  <p>Arreglo original dataNumbers.forEach</p>
+  <div *ngFor="let item of dataNumbers">
+    <span>{{item}}</span>
+  </div>
+
+</div>
